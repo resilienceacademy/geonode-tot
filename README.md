@@ -37,11 +37,11 @@ GeoNode-Project Template for `resilienceacademy`
       DOCKER_ENV=production
       UWSGI_CMD=uwsgi --ini /usr/src/resilienceacademy/uwsgi.ini
       
-      -SITEURL=https://geonode-06.utu.fi/
+      -SITEURL=https://localhost/
       +SITEURL=https://<public host>/
       ALLOWED_HOSTS=['django', '*']
       
-      -GEONODE_LB_HOST_IP=geonode-06.utu.fi
+      -GEONODE_LB_HOST_IP=localhost
       +GEONODE_LB_HOST_IP=<public host>
       # port where the server can be reached on HTTP
       # GEONODE_LB_PORT=80
@@ -50,11 +50,11 @@ GeoNode-Project Template for `resilienceacademy`
       
       -ADMIN_PASSWORD=admin
       +ADMIN_PASSWORD=<your admin pwd>
-      -ADMIN_EMAIL=admin@geonode-06.utu.fi
+      -ADMIN_EMAIL=admin@gmail.com
       +ADMIN_EMAIL=<your admin email>
       
-      -GEOSERVER_WEB_UI_LOCATION=https://geonode-06.utu.fi/geoserver/
-      -GEOSERVER_PUBLIC_LOCATION=https://geonode-06.utu.fi/geoserver/
+      -GEOSERVER_WEB_UI_LOCATION=http://localhost/geoserver/
+      -GEOSERVER_PUBLIC_LOCATION=http://localhost/geoserver/
       +GEOSERVER_WEB_UI_LOCATION=https://<public host>/geoserver/
       +GEOSERVER_PUBLIC_LOCATION=https://<public host>/geoserver/
       GEOSERVER_LOCATION=http://geoserver:8080/geoserver/
@@ -82,7 +82,7 @@ GeoNode-Project Template for `resilienceacademy`
       @@ -1,6 +1,6 @@
       DOCKER_HOST_IP
       
-      -GEONODE_LB_HOST_IP=geonode-06.utu.fi
+      -GEONODE_LB_HOST_IP=localhost
       +GEONODE_LB_HOST_IP=<public host>
       # port where the server can be reached on HTTP
       # GEONODE_LB_PORT=80
@@ -100,7 +100,7 @@ GeoNode-Project Template for `resilienceacademy`
       +++ b/scripts/docker/env/production/nginx.env
       @@ -1,12 +1,12 @@
       
-      -ADMIN_EMAIL=admin@geonode-06.utu.fi
+      -ADMIN_EMAIL=admin@gmail.com
       +ADMIN_EMAIL=<your admin email>
       
       # IP or domain name and port where the server can be reached on HTTP (leave HOST empty if you want to use HTTPS only)
@@ -108,7 +108,7 @@ GeoNode-Project Template for `resilienceacademy`
       HTTP_PORT=80
       
       # IP or domain name and port where the server can be reached on HTTPS (leave HOST empty if you want to use HTTP only)
-      -HTTPS_HOST=geonode-06.utu.fi
+      -HTTPS_HOST=localhost
       +HTTPS_HOST=<public host>
       HTTPS_PORT=443
       
