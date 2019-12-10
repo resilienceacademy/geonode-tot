@@ -4,7 +4,6 @@
 
 -  [Setup](#Setup)
 -  [Build](#Build)
--  [Customize](#Customize)
 
 GeoNode-Project Template for `resilienceacademy`
 
@@ -156,32 +155,3 @@ GeoNode-Project Template for `resilienceacademy`
     # Browse to
     https://<public host>/
     ```
-
-## Customize
-
-1. Clone the git repository.
-
-    ```bash
-    cd /opt
-    git clone https://github.com/geosolutions-it/geonode-customisation.git
-    ```
-
-2. Move to repo folder.
-
-    ```bash
-    cd /opt/geonode-customisation
-    ```
-
-3. Make .sh files executable.
-
-    ```bash
-    chmod u+x *.sh
-    ```
-
-4. Execute `update.sh`.
-
-    ```bash
-    ./update.sh
-    ```
-
-`update.sh` will always pull latest version from git before updating files. All files will be backed up before updating. Process halts on error.
