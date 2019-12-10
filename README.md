@@ -13,13 +13,13 @@ GeoNode-Project Template for `resilienceacademy`
 
     ```bash
     cd /opt
-    git clone https://github.com/geosolutions-it/resilienceacademy.git
+    git clone git@github.com:resilienceacademy/geonode-tot.git
     ```
 
 2. Move to repo folder.
 
     ```bash
-    cd /opt/resilienceacademy
+    cd /opt/geonode-tot
     ```
 
 3. Customize the environment.
